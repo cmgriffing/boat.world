@@ -4,6 +4,7 @@ module.exports = {
     description: `A community project to reimagine a marketing site for an awesome game by an awesome streamer.`,
     author: `twitch chat`,
   },
+  pathPrefix: "/boat.world",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
