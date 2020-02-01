@@ -27,20 +27,13 @@ export default function Template({
   )
 }
 export const pageQuery = graphql`
-  query(
-    $path: String!
-    $SQIP_HERO_SHAPE_COUNT: Int
-    $SQIP_THUMB_SHAPE_COUNT: Int
-  ) {
+  query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        featuredImage {
-          ...HeroImage
-        }
       }
     }
   }
