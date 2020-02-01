@@ -4,4 +4,38 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+const nodePath = require(`path`)
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
+  return graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              postType
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const {
+        frontmatter: { path, postType },
+      } = node
+      return createPage({
+        path,
+        component: nodePath.resolve(`src/templates/${postType}Template.js`),
+        context: {}, // additional data can be passed via context
+      })
+    })
+  })
+}
