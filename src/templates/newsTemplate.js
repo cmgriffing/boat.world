@@ -11,13 +11,13 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const { featuredImage } = frontmatter
+  const { title, date } = frontmatter
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO title={title} />
       <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h1>{title}</h1>
+        <h2>{date}</h2>
       </div>
       <div
         className="blog-post-content"
