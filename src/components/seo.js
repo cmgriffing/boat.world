@@ -68,7 +68,27 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+  >
+         {/* Primary Meta Tags */}
+        <title>Bot Land - free automated strategy game</title>
+        <meta name="title" content="Bot Land - free automated strategy game"/>
+        <meta name="description" content="Bot Land is an automated strategy game. Create bots, write scripts, and battle other players! Try it today for free on your computer or mobile device!"/>
+
+         {/* Open Graph / Facebook  */}
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://bot.land/"/>
+        <meta property="og:title" content="Bot Land - free automated strategy game"/>
+        <meta property="og:description" content="Bot Land is an automated strategy game. Create bots, write scripts, and battle other players! Try it today for free on your computer or mobile device!"/>
+        <meta property="og:image" content="https://bot.land/dist/open_graph.png"/>
+
+         {/* Twitter  */}
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://bot.land/"/>
+        <meta property="twitter:title" content="Bot Land - free automated strategy game"/>
+        <meta property="twitter:description" content="Bot Land is an automated strategy game. Create bots, write scripts, and battle other players! Try it today for free on your computer or mobile device!"/>
+        <meta property="twitter:image" content="https://bot.land/dist/open_graph.png"/>
+
+  </Helmet>
   )
 }
 
