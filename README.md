@@ -91,15 +91,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## We use Yarn!
-[Yarn](https://yarnpkg.com/) is a actively open sourced package manager being developed by Facebook.
+[Yarn](https://yarnpkg.com/) is an actively developed open source package manager being developed by Facebook.
+Installing dependencies is simply done with `yarn install`
 
-* **Offline Mode.** If you've installed a package before, then you can install it again without an internet connection.
-* **Deterministic.** The same dependencies will be installed in the same exact way on any machine, regardless of installation order.
-* **Network Performance.** Yarn efficiently queues requests and avoids request waterfalls in order to maximize network utilization.
-* **Network Resilience.** A single request that fails will not cause the entire installation to fail. Requests are automatically retried upon failure.
-* **Flat Mode.** Yarn resolves mismatched versions of dependencies to a single version to avoid creating duplicates.
-
-[source](https://github.com/yarnpkg/yarn/blob/master/README.md)
+Visit the offical Yarn repo for more information.
+[https://github.com/yarnpkg/yarn/blob/master/README.md](https://github.com/yarnpkg/yarn/blob/master/README.md)
 
 ## 💫 Deploy
 
