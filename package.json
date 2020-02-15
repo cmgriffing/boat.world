@@ -4,6 +4,11 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.21.1",
+    "node": ">= 12.13.0"
+  },
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-background-image": "0.9.13",
