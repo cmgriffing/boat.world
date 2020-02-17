@@ -110,6 +110,11 @@ function SEO({ description, lang, meta, title }) {
         <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2f8f0821c28001693635408f3fabc2a54513040c
   </Helmet>
   )
 }
